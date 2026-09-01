@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="HSC Science Hub — Practice tests and quizzes for Physics, Chemistry, Higher Mathematics, Biology and ICT.">
+
+    <title>Tests | HSC Science Hub</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- TEST PAGE CSS -->
+    <link rel="stylesheet" href="css/test.css">
+
+</head>
+
+
+<body class="test-page">
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <span class="logo-text">
+                HSC <strong>Science Hub</strong>
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="subjects.html">
+                Subjects
+            </a>
+
+            <a href="videos.html">
+                Videos
+            </a>
+
+            <a href="books.html">
+                Resources
+            </a>
+
+            <a href="practice.html">
+                Practice
+            </a>
+
+            <a href="test.html" class="active">
+                Tests
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </nav>
+
+
+        <!-- ACTIONS -->
+
+        <div class="nav-actions">
+
+            <a href="playlist.html" class="nav-about">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </a>
+
+            <a href="about.html" class="nav-about">
+                About
+            </a>
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Toggle theme">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     PAGE HERO
+========================================================= -->
+
+<section class="test-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="section-tag">
+                TEST YOUR KNOWLEDGE
+            </span>
+
+            <h1>
+                Practice Tests & Quizzes
+            </h1>
+
+            <p>
+                Test your understanding with subject-wise quizzes
+                and exam-style questions designed for HSC Science
+                preparation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     TEST SECTION
+========================================================= -->
+
+<section class="tests-section">
+
+    <div class="container">
+
+
+        <!-- TOOLBAR -->
+
+        <div class="tests-toolbar">
+
+
+            <!-- SEARCH -->
+
+            <div class="test-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="testSearch"
+                    placeholder="Search tests, subjects or topics..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="test-filters">
+
+                <button
+                    class="test-filter active"
+                    data-filter="all">
+
+                    All
+
+                </button>
+
+                <button
+                    class="test-filter"
+                    data-filter="physics">
+
+                    Physics
+
+                </button>
+
+                <button
+                    class="test-filter"
+                    data-filter="chemistry">
+
+                    Chemistry
+
+                </button>
+
+                <button
+                    class="test-filter"
+                    data-filter="higher-math">
+
+                    Higher Math
+
+                </button>
+
+                <button
+                    class="test-filter"
+                    data-filter="biology">
+
+                    Biology
+
+                </button>
+
+                <button
+                    class="test-filter"
+                    data-filter="ict">
+
+                    ICT
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SECTION HEADING -->
+
+        <div class="tests-heading">
+
+            <div>
+
+                <span class="section-tag">
+                    AVAILABLE TESTS
+                </span>
+
+                <h2>
+                    Choose a Test
+                </h2>
+
+            </div>
+
+            <span id="testCount">
+                Showing all tests
+            </span>
+
+        </div>
+
+
+
+        <!-- TEST GRID -->
+
+        <div
+            class="tests-grid"
+            id="testsGrid">
+        </div>
+
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            class="tests-empty"
+            id="testsEmpty"
+            style="display:none;">
+
+            <div class="empty-icon">
+
+                <i class="fa-solid fa-file-circle-question"></i>
+
+            </div>
+
+            <h3>
+                No tests found
+            </h3>
+
+            <p>
+                Try another search term or choose a different subject.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TEST TIPS
+========================================================= -->
+
+<section class="test-tips">
+
+    <div class="container">
+
+
+        <div class="section-intro">
+
+            <span class="section-tag">
+                TEST SMART
+            </span>
+
+            <h2>
+                Make the Most of Your Tests
+            </h2>
+
+            <p>
+                Regular testing helps you identify weak areas and
+                improve your exam preparation.
+            </p>
+
+        </div>
+
+
+
+        <div class="tips-grid">
+
+
+            <!-- TIP 01 -->
+
+            <div class="tip-card">
+
+                <div class="tip-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Manage Your Time
+                </h3>
+
+                <p>
+                    Try to complete each test within the suggested
+                    time to improve your exam speed.
+                </p>
+
+            </div>
+
+
+
+            <!-- TIP 02 -->
+
+            <div class="tip-card">
+
+                <div class="tip-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Focus on Accuracy
+                </h3>
+
+                <p>
+                    Read every question carefully and avoid guessing
+                    when you are unsure.
+                </p>
+
+            </div>
+
+
+
+            <!-- TIP 03 -->
+
+            <div class="tip-card">
+
+                <div class="tip-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Check Your Result
+                </h3>
+
+                <p>
+                    Review your score after every test and identify
+                    topics where you need more practice.
+                </p>
+
+            </div>
+
+
+
+            <!-- TIP 04 -->
+
+            <div class="tip-card">
+
+                <div class="tip-icon">
+
+                    <i class="fa-solid fa-rotate"></i>
+
+                </div>
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Test Again
+                </h3>
+
+                <p>
+                    Revisit difficult topics and take the test again
+                    to measure your improvement.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="test-cta">
+
+    <div class="container">
+
+        <div class="test-cta-box">
+
+            <div>
+
+                <span class="section-tag">
+                    KEEP LEARNING
+                </span>
+
+                <h2>
+                    Need More Practice?
+                </h2>
+
+                <p>
+                    Strengthen your preparation with chapter-wise
+                    practice questions before taking a full test.
+                </p>
+
+            </div>
+
+            <a
+                href="practice.html"
+                class="btn btn-primary">
+
+                Practice Questions
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </span>
+
+                <span class="logo-text">
+
+                    HSC <strong>Science Hub</strong>
+
+                </span>
+
+            </a>
+
+            <p>
+                A structured learning platform designed to make
+                HSC Science preparation simpler, smarter and
+                more organized.
+            </p>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-links">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="subjects.html">
+                Subjects
+            </a>
+
+            <a href="videos.html">
+                Videos
+            </a>
+
+            <a href="books.html">
+                Resources
+            </a>
+
+            <a href="practice.html">
+                Practice
+            </a>
+
+        </div>
+
+
+
+        <!-- STUDY -->
+
+        <div class="footer-links">
+
+            <h4>
+                Study
+            </h4>
+
+            <a href="test.html">
+                Tests
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="playlist.html">
+                Playlist
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+
+
+        <!-- SUBJECTS -->
+
+        <div class="footer-links">
+
+            <h4>
+                HSC Science
+            </h4>
+
+            <a href="subject.html?subject=physics">
+                Physics
+            </a>
+
+            <a href="subject.html?subject=chemistry">
+                Chemistry
+            </a>
+
+            <a href="subject.html?subject=higher-math">
+                Higher Mathematics
+            </a>
+
+            <a href="subject.html?subject=biology">
+                Biology
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © 2026 HSC Science Hub. Built for HSC Science Students.
+            </span>
+
+            <span>
+                Learn • Practice • Improve
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     GLOBAL JAVASCRIPT
+========================================================= -->
+
+<script src="js/app.js"></script>
+
+
+
+<!-- =========================================================
+     TEST JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   TEST DATA
+========================================================= */
+
+const tests = [
+
+    {
+        title: "Physics Fundamentals Test",
+        subject: "physics",
+        subjectName: "Physics",
+        topic: "Physical World & Measurement",
+        questions: 20,
+        duration: "20 min",
+        level: "Easy",
+        icon: "⚛"
+    },
+
+    {
+        title: "Mechanics & Motion Test",
+        subject: "physics",
+        subjectName: "Physics",
+        topic: "Motion & Newton's Laws",
+        questions: 25,
+        duration: "25 min",
+        level: "Medium",
+        icon: "⚡"
+    },
+
+    {
+        title: "Physics Problem Solving",
+        subject: "physics",
+        subjectName: "Physics",
+        topic: "Work, Energy & Power",
+        questions: 20,
+        duration: "25 min",
+        level: "Hard",
+        icon: "∑"
+    },
+
+
+    {
+        title: "Chemistry Basics Test",
+        subject: "chemistry",
+        subjectName: "Chemistry",
+        topic: "Basic Chemistry Concepts",
+        questions: 20,
+        duration: "20 min",
+        level: "Easy",
+        icon: "🧪"
+    },
+
+    {
+        title: "Chemical Reactions Test",
+        subject: "chemistry",
+        subjectName: "Chemistry",
+        topic: "Chemical Changes",
+        questions: 25,
+        duration: "25 min",
+        level: "Medium",
+        icon: "⚗"
+    },
+
+    {
+        title: "Organic Chemistry Test",
+        subject: "chemistry",
+        subjectName: "Chemistry",
+        topic: "Organic Chemistry",
+        questions: 25,
+        duration: "30 min",
+        level: "Hard",
+        icon: "🧪"
+    },
+
+
+    {
+        title: "Matrices & Determinants Test",
+        subject: "higher-math",
+        subjectName: "Higher Mathematics",
+        topic: "Matrices & Determinants",
+        questions: 20,
+        duration: "25 min",
+        level: "Medium",
+        icon: "∑"
+    },
+
+    {
+        title: "Vector Mathematics Test",
+        subject: "higher-math",
+        subjectName: "Higher Mathematics",
+        topic: "Vectors",
+        questions: 20,
+        duration: "25 min",
+        level: "Medium",
+        icon: "→"
+    },
+
+    {
+        title: "Differentiation Test",
+        subject: "higher-math",
+        subjectName: "Higher Mathematics",
+        topic: "Differentiation",
+        questions: 25,
+        duration: "30 min",
+        level: "Hard",
+        icon: "∫"
+    },
+
+
+    {
+        title: "Cell Biology Test",
+        subject: "biology",
+        subjectName: "Biology",
+        topic: "Cell Structure & Function",
+        questions: 20,
+        duration: "20 min",
+        level: "Easy",
+        icon: "🧬"
+    },
+
+    {
+        title: "Cell Division Test",
+        subject: "biology",
+        subjectName: "Biology",
+        topic: "Mitosis & Meiosis",
+        questions: 25,
+        duration: "25 min",
+        level: "Medium",
+        icon: "🔬"
+    },
+
+    {
+        title: "Genetics Test",
+        subject: "biology",
+        subjectName: "Biology",
+        topic: "Genetics & Evolution",
+        questions: 25,
+        duration: "30 min",
+        level: "Hard",
+        icon: "🧬"
+    },
+
+
+    {
+        title: "ICT Fundamentals Test",
+        subject: "ict",
+        subjectName: "ICT",
+        topic: "ICT Basics",
+        questions: 20,
+        duration: "20 min",
+        level: "Easy",
+        icon: "💻"
+    },
+
+    {
+        title: "Number Systems Test",
+        subject: "ict",
+        subjectName: "ICT",
+        topic: "Number Systems & Digital Devices",
+        questions: 25,
+        duration: "25 min",
+        level: "Medium",
+        icon: "01"
+    },
+
+    {
+        title: "HTML & Programming Test",
+        subject: "ict",
+        subjectName: "ICT",
+        topic: "HTML & Programming",
+        questions: 25,
+        duration: "30 min",
+        level: "Hard",
+        icon: "💻"
+    }
+
+];
+
+
+
+/* =========================================================
+   DOM ELEMENTS
+========================================================= */
+
+const testsGrid =
+    document.getElementById("testsGrid");
+
+const testSearch =
+    document.getElementById("testSearch");
+
+const testsEmpty =
+    document.getElementById("testsEmpty");
+
+const testCount =
+    document.getElementById("testCount");
+
+
+let currentFilter = "all";
+
+
+
+/* =========================================================
+   RENDER TESTS
+========================================================= */
+
+function renderTests() {
+
+    const searchTerm =
+        testSearch.value
+            .toLowerCase()
+            .trim();
+
+
+    const filteredTests =
+        tests.filter(test => {
+
+            const matchesSubject =
+                currentFilter === "all" ||
+                test.subject === currentFilter;
+
+
+            const matchesSearch =
+                test.title
+                    .toLowerCase()
+                    .includes(searchTerm) ||
+
+                test.subjectName
+                    .toLowerCase()
+                    .includes(searchTerm) ||
+
+                test.topic
+                    .toLowerCase()
+                    .includes(searchTerm) ||
+
+                test.level
+                    .toLowerCase()
+                    .includes(searchTerm);
+
+
+            return (
+                matchesSubject &&
+                matchesSearch
+            );
+
+        });
+
+
+    testsGrid.innerHTML = "";
+
+
+    if (filteredTests.length === 0) {
+
+        testsEmpty.style.display =
+            "block";
+
+        testCount.textContent =
+            "No tests found";
+
+        return;
+
+    }
+
+
+    testsEmpty.style.display =
+        "none";
+
+
+    testCount.textContent =
+        `Showing ${filteredTests.length} test${filteredTests.length > 1 ? "s" : ""}`;
+
+
+    filteredTests.forEach((test, index) => {
+
+        const card =
+            document.createElement("article");
+
+        card.className =
+            "test-card";
+
+
+        card.innerHTML = `
+
+            <div class="test-card-top">
+
+                <div class="test-icon">
+                    ${test.icon}
+                </div>
+
+                <span class="test-level ${test.level.toLowerCase()}">
+                    ${test.level}
+                </span>
+
+            </div>
+
+
+            <div class="test-card-content">
+
+                <span class="test-subject">
+                    ${test.subjectName}
+                </span>
+
+                <h3>
+                    ${test.title}
+                </h3>
+
+                <p>
+                    ${test.topic}
+                </p>
+
+
+                <div class="test-meta">
+
+                    <span>
+                        <i class="fa-solid fa-circle-question"></i>
+                        ${test.questions} Questions
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-clock"></i>
+                        ${test.duration}
+                    </span>
+
+                </div>
+
+
+                <div class="test-card-bottom">
+
+                    <button
+                        class="test-start"
+                        onclick="startTest('${test.title}')">
+
+                        Start Test
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        testsGrid.appendChild(card);
+
+    });
+
+}
+
+
+
+/* =========================================================
+   FILTER BUTTONS
+========================================================= */
+
+const testFilterButtons =
+    document.querySelectorAll(
+        ".test-filter"
+    );
+
+
+testFilterButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        () => {
+
+            testFilterButtons.forEach(btn =>
+                btn.classList.remove("active")
+            );
+
+
+            button.classList.add("active");
+
+
+            currentFilter =
+                button.dataset.filter;
+
+
+            renderTests();
+
+        }
+    );
+
+});
+
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+testSearch.addEventListener(
+    "input",
+    renderTests
+);
+
+
+
+/* =========================================================
+   START TEST
+========================================================= */
+
+function startTest(testTitle) {
+
+    alert(
+        `"${testTitle}" will be available soon!`
+    );
+
+}
+
+
+
+/* =========================================================
+   INITIAL LOAD
+========================================================= */
+
+renderTests();
+
+</script>
+
+
+</body>
+</html>

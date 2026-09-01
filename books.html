@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="HSC Science Hub — Books, textbooks, guides and study resources for HSC Science students.">
+
+<title>Resources | HSC Science Hub</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/books.css">
+```
+
+</head>
+
+<body class="books-page">
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+```
+<div class="container nav-container">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </span>
+
+        <span class="logo-text">
+            HSC <strong>Science Hub</strong>
+        </span>
+
+    </a>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="subjects.html">Subjects</a>
+
+        <a href="videos.html">Videos</a>
+
+        <a href="books.html" class="active">Resources</a>
+
+        <a href="practice.html">Practice</a>
+
+        <a href="test.html">Tests</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <a href="playlist.html" class="nav-about">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <a href="about.html" class="nav-about">
+            About
+        </a>
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </div>
+
+</div>
+```
+
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="books-hero">
+
+```
+<div class="container">
+
+    <div class="hero-content">
+
+        <span class="section-tag">
+            STUDY RESOURCES
+        </span>
+
+        <h1>
+            Books & Learning Resources
+        </h1>
+
+        <p>
+            Find textbooks, notes, guides and useful study
+            resources to make your HSC Science preparation
+            more organized and effective.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+<section class="books-section">
+
+```
+<div class="container">
+
+
+    <!-- SEARCH + FILTER -->
+
+    <div class="books-toolbar">
+
+        <div class="books-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="bookSearch"
+                placeholder="Search books, subjects or topics..."
+                autocomplete="off">
+
+        </div>
+
+
+        <div class="book-filters">
+
+            <button class="book-filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="book-filter" data-filter="physics">
+                Physics
+            </button>
+
+            <button class="book-filter" data-filter="chemistry">
+                Chemistry
+            </button>
+
+            <button class="book-filter" data-filter="higher-math">
+                Higher Math
+            </button>
+
+            <button class="book-filter" data-filter="biology">
+                Biology
+            </button>
+
+            <button class="book-filter" data-filter="ict">
+                ICT
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- HEADING -->
+
+    <div class="books-heading">
+
+        <div>
+
+            <span class="section-tag">
+                RECOMMENDED RESOURCES
+            </span>
+
+            <h2>
+                Study Materials
+            </h2>
+
+        </div>
+
+        <span id="bookCount">
+            Showing all resources
+        </span>
+
+    </div>
+
+
+    <!-- RESOURCE GRID -->
+
+    <div
+        class="books-grid"
+        id="booksGrid">
+    </div>
+
+
+    <!-- EMPTY STATE -->
+
+    <div
+        class="books-empty"
+        id="booksEmpty"
+        style="display:none;">
+
+        <div class="empty-icon">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <h3>
+            No resources found
+        </h3>
+
+        <p>
+            Try another search term or choose a different subject.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     RESOURCE TIPS
+========================================================= -->
+
+<section class="resource-tips">
+
+```
+<div class="container">
+
+    <div class="section-intro">
+
+        <span class="section-tag">
+            STUDY SMART
+        </span>
+
+        <h2>
+            How to Use These Resources
+        </h2>
+
+        <p>
+            Use different resources together for better
+            understanding and stronger HSC preparation.
+        </p>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <span>01</span>
+
+            <h3>
+                Learn the Concept
+            </h3>
+
+            <p>
+                Start with your textbook and understand the
+                basic concept before moving to advanced problems.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+
+            <span>02</span>
+
+            <h3>
+                Practice Questions
+            </h3>
+
+            <p>
+                Solve MCQs, board questions and numerical
+                problems after studying each topic.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-video"></i>
+            </div>
+
+            <span>03</span>
+
+            <h3>
+                Use Videos
+            </h3>
+
+            <p>
+                Watch video lessons when a topic feels difficult
+                or needs a visual explanation.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-rotate"></i>
+            </div>
+
+            <span>04</span>
+
+            <h3>
+                Revise Regularly
+            </h3>
+
+            <p>
+                Review important formulas, definitions and
+                concepts regularly.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="resource-cta">
+
+```
+<div class="container">
+
+    <div class="resource-cta-box">
+
+        <div>
+
+            <span class="section-tag">
+                READY TO STUDY?
+            </span>
+
+            <h2>
+                Turn Knowledge Into Practice
+            </h2>
+
+            <p>
+                After studying from your resources, solve
+                chapter-wise questions to check your preparation.
+            </p>
+
+        </div>
+
+        <a
+            href="practice.html"
+            class="btn btn-primary">
+
+            Start Practice
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+```
+<div class="container footer-grid">
+
+    <div class="footer-brand">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <span class="logo-text">
+                HSC <strong>Science Hub</strong>
+            </span>
+
+        </a>
+
+        <p>
+            A structured learning platform designed to make
+            HSC Science preparation simpler, smarter and
+            more organized.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h4>Explore</h4>
+
+        <a href="subjects.html">Subjects</a>
+
+        <a href="videos.html">Videos</a>
+
+        <a href="books.html">Resources</a>
+
+        <a href="practice.html">Practice</a>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h4>Study</h4>
+
+        <a href="test.html">Tests</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="playlist.html">Playlist</a>
+
+        <a href="about.html">About</a>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h4>HSC Science</h4>
+
+        <a href="subject.html?subject=physics">
+            Physics
+        </a>
+
+        <a href="subject.html?subject=chemistry">
+            Chemistry
+        </a>
+
+        <a href="subject.html?subject=biology">
+            Biology
+        </a>
+
+        <a href="subject.html?subject=ict">
+            ICT
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <div class="container">
+
+        <span>
+            © 2026 HSC Science Hub. Built for HSC Science Students.
+        </span>
+
+        <span>
+            Learn • Practice • Improve
+        </span>
+
+    </div>
+
+</div>
+```
+
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const resources = [
+
+    {
+        title: "HSC Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Physical World and Measurement",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Physical World and Measurement Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Physical World and Measurement",
+        type: "Chapter Notes",
+        source: "EduQuest24",
+        url: "https://eduquest24.com/%E0%A6%AD%E0%A7%8C%E0%A6%A4-%E0%A6%9C%E0%A6%97%E0%A7%8E-%E0%A6%93-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%AA/"
+    },
+
+    {
+        title: "Physics 1st Paper Chapter Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Vector",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Vector Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Vector",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Chapter Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Dynamics",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Dynamics Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Dynamics",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Newtonian Mechanics",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Newtonian Mechanics Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Newtonian Mechanics",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Work, Energy and Power",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Work, Energy and Power Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Work, Energy and Power",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Gravitation and Gravity",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Gravitation and Gravity Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Gravitation and Gravity",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Structural Properties of Matter",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Structural Properties Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Structural Properties of Matter",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Periodic Motion",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Periodic Motion Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Periodic Motion",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Wave",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Wave Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Wave",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 1st Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Ideal Gas and Kinetic Theory",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics-1st-paper-notes-bangla-version/"
+    },
+
+    {
+        title: "Ideal Gas and Kinetic Theory Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Ideal Gas and Kinetic Theory",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://ensiner.com/details/hsc-2027-physics-1st-paper-full-syllabus-foundation-course"
+    },
+
+    {
+        title: "Physics 2nd Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Thermodynamics",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics_2nd_paper-notes-english-version/"
+    },
+
+    {
+        title: "Thermodynamics Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Thermodynamics",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://www.ensiner.com/details/hsc-physics-2nd-paper-full-syllabus-foundation-course-for-2026"
+    },
+
+    {
+        title: "Physics 2nd Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Electrostatics",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics_2nd_paper-notes-english-version/"
+    },
+
+    {
+        title: "Static Electricity Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Electrostatics",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://www.ensiner.com/details/hsc-physics-2nd-paper-full-syllabus-foundation-course-for-2026"
+    },
+
+    {
+        title: "Physics 2nd Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Current Electricity",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics_2nd_paper-notes-english-version/"
+    },
+
+    {
+        title: "Current Electricity Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Current Electricity",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://www.ensiner.com/details/hsc-physics-2nd-paper-full-syllabus-foundation-course-for-2026"
+    },
+
+    {
+        title: "Physics 2nd Paper Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Magnetic Effect of Current",
+        type: "Notes",
+        source: "Edutrack BD",
+        url: "https://edutrackbd.com/hsc-physics_2nd_paper-notes-english-version/"
+    },
+
+    {
+        title: "Magnetic Effect and Magnetism Lecture Notes",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Magnetic Effect of Current",
+        type: "Lecture Notes",
+        source: "Ensiner",
+        url: "https://www.ensiner.com/details/hsc-physics-2nd-paper-full-syllabus-foundation-course-for-2026"
+    }
+
+];
+
+
+const booksGrid =
+    document.getElementById("booksGrid");
+
+const bookSearch =
+    document.getElementById("bookSearch");
+
+const booksEmpty =
+    document.getElementById("booksEmpty");
+
+const bookCount =
+    document.getElementById("bookCount");
+
+
+let currentFilter = "all";
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+function getResourceIcon(type) {
+
+    if (type === "Notes")
+        return "📘";
+
+    if (type === "Chapter Notes")
+        return "📖";
+
+    if (type === "Lecture Notes")
+        return "📝";
+
+    return "📚";
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
+
+function renderResources() {
+
+    const searchTerm =
+        bookSearch.value.toLowerCase().trim();
+
+
+    const filtered =
+        resources.filter(resource => {
+
+            const subjectMatch =
+                currentFilter === "all" ||
+                resource.subject === currentFilter;
+
+
+            const text = `
+
+                ${resource.title}
+                ${resource.subjectName}
+                ${resource.chapter}
+                ${resource.type}
+                ${resource.source}
+
+            `.toLowerCase();
+
+
+            return (
+                subjectMatch &&
+                text.includes(searchTerm)
+            );
+
+        });
+
+
+    booksGrid.innerHTML = "";
+
+
+    if (filtered.length === 0) {
+
+        booksEmpty.style.display = "block";
+
+        bookCount.textContent =
+            "No resources found";
+
+        return;
+
+    }
+
+
+    booksEmpty.style.display = "none";
+
+
+    bookCount.textContent =
+        `Showing ${filtered.length} resource${filtered.length > 1 ? "s" : ""}`;
+
+
+    filtered.forEach(resource => {
+
+        const card =
+            document.createElement("article");
+
+        card.className =
+            "resource-card";
+
+
+        card.innerHTML = `
+
+            <div class="resource-cover">
+
+                <div class="resource-icon">
+                    ${getResourceIcon(resource.type)}
+                </div>
+
+                <span class="resource-type">
+                    ${resource.type}
+                </span>
+
+            </div>
+
+
+            <div class="resource-card-content">
+
+                <span class="resource-subject">
+                    ${resource.subjectName}
+                </span>
+
+                <h3>
+                    ${resource.title}
+                </h3>
+
+                <p>
+                    ${resource.chapter}
+                </p>
+
+                <small>
+                    Source: ${resource.source}
+                </small>
+
+
+                <div class="resource-bottom">
+
+                    <a
+                        href="${resource.url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resource-action">
+
+                        Open Resource
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        booksGrid.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+document
+    .querySelectorAll(".book-filter")
+    .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            document
+                .querySelectorAll(".book-filter")
+                .forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+
+            button.classList.add("active");
+
+
+            currentFilter =
+                button.dataset.filter;
+
+
+            renderResources();
+
+        });
+
+    });
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+bookSearch.addEventListener(
+    "input",
+    renderResources
+);
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+const savedTheme =
+    localStorage.getItem("hsc-theme");
+
+
+if (savedTheme === "dark") {
+
+    document.body.classList.add("dark-mode");
+
+    themeToggle.innerHTML =
+        '<i class="fa-solid fa-sun"></i>';
+
+}
+
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+
+    const isDark =
+        document.body.classList.contains("dark-mode");
+
+
+    localStorage.setItem(
+        "hsc-theme",
+        isDark ? "dark" : "light"
+    );
+
+
+    themeToggle.innerHTML =
+        isDark
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+
+});
+
+
+/* =========================================================
+   INITIAL LOAD
+========================================================= */
+
+renderResources();
+
+</script>
+
+</body>
+</html>

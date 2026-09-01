@@ -1,0 +1,1034 @@
+/* =========================================================
+   HSC SCIENCE HUB — RESOURCES PAGE
+   books.css
+========================================================= */
+
+
+/* =========================================================
+   BOOKS HERO
+========================================================= */
+
+.books-hero {
+    padding: 90px 0 75px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-light, #eef4ff),
+            var(--bg-color, #ffffff)
+        );
+
+    border-bottom:
+        1px solid var(--border-color, #e5e7eb);
+}
+
+.books-hero .hero-content {
+    max-width: 850px;
+}
+
+.books-hero .section-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.books-hero h1 {
+    margin: 0 0 17px;
+
+    color: var(--heading-color, #111827);
+
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.books-hero p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: var(--text-color, #64748b);
+
+    font-size: 1.06rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BOOKS SECTION
+========================================================= */
+
+.books-section {
+    padding: 75px 0;
+}
+
+
+/* =========================================================
+   BOOKS TOOLBAR
+========================================================= */
+
+.books-toolbar {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.books-search {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+    max-width: 450px;
+
+    padding: 13px 17px;
+
+    background:
+        var(--card-bg, #ffffff);
+
+    border:
+        1px solid var(--border-color, #e5e7eb);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(15, 23, 42, 0.05);
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.books-search:focus-within {
+    border-color:
+        var(--primary-color, #2563eb);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.books-search i {
+    color:
+        var(--text-color, #64748b);
+
+    font-size: 0.95rem;
+}
+
+.books-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color:
+        var(--heading-color, #111827);
+
+    font-family: inherit;
+    font-size: 0.94rem;
+}
+
+.books-search input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.book-filters {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+.book-filter {
+    padding: 9px 16px;
+
+    border:
+        1px solid var(--border-color, #e5e7eb);
+
+    border-radius: 999px;
+
+    background:
+        var(--card-bg, #ffffff);
+
+    color:
+        var(--text-color, #64748b);
+
+    font-family: inherit;
+    font-size: 0.87rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        all 0.25s ease;
+}
+
+.book-filter:hover {
+    color:
+        var(--primary-color, #2563eb);
+
+    border-color:
+        var(--primary-color, #2563eb);
+
+    transform: translateY(-1px);
+}
+
+.book-filter.active {
+    background:
+        var(--primary-color, #2563eb);
+
+    border-color:
+        var(--primary-color, #2563eb);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BOOKS HEADING
+========================================================= */
+
+.books-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.books-heading h2 {
+    margin-top: 8px;
+}
+
+#bookCount {
+    margin-bottom: 5px;
+
+    color:
+        var(--text-color, #64748b);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BOOK / RESOURCE GRID
+========================================================= */
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   RESOURCE CARD
+========================================================= */
+
+.resource-card {
+    overflow: hidden;
+
+    background:
+        var(--card-bg, #ffffff);
+
+    border:
+        1px solid var(--border-color, #e5e7eb);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================================================
+   RESOURCE COVER
+========================================================= */
+
+.resource-cover {
+    position: relative;
+
+    height: 190px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #eff6ff
+        );
+}
+
+.resource-cover::before {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.35);
+
+    top: -90px;
+    right: -55px;
+}
+
+.resource-cover::after {
+    content: "";
+
+    position: absolute;
+
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.25);
+
+    bottom: -65px;
+    left: -40px;
+}
+
+
+/* =========================================================
+   RESOURCE ICON
+========================================================= */
+
+.resource-icon {
+    position: relative;
+    z-index: 2;
+
+    width: 78px;
+    height: 78px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    color:
+        var(--primary-color, #2563eb);
+
+    font-size: 2.25rem;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.10);
+
+    transition:
+        transform 0.3s ease;
+}
+
+.resource-card:hover .resource-icon {
+    transform: scale(1.06) rotate(-2deg);
+}
+
+
+/* =========================================================
+   RESOURCE TYPE
+========================================================= */
+
+.resource-type {
+    position: absolute;
+    z-index: 4;
+
+    top: 14px;
+    right: 14px;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    background:
+        rgba(15, 23, 42, 0.78);
+
+    color: #ffffff;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   RESOURCE CARD CONTENT
+========================================================= */
+
+.resource-card-content {
+    padding: 22px;
+}
+
+.resource-subject {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    color:
+        var(--primary-color, #2563eb);
+
+    font-size: 0.73rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.resource-card-content h3 {
+    margin: 0 0 10px;
+
+    color:
+        var(--heading-color, #111827);
+
+    font-size: 1.12rem;
+    line-height: 1.4;
+}
+
+.resource-card-content p {
+    min-height: 70px;
+
+    margin: 0;
+
+    color:
+        var(--text-color, #64748b);
+
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   RESOURCE BOTTOM
+========================================================= */
+
+.resource-bottom {
+    display: flex;
+
+    align-items: center;
+
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top:
+        1px solid var(--border-color, #e5e7eb);
+}
+
+
+/* =========================================================
+   RESOURCE ACTION BUTTON
+========================================================= */
+
+.resource-action {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 0;
+
+    border: none;
+
+    background: transparent;
+
+    color:
+        var(--primary-color, #2563eb);
+
+    font-family: inherit;
+    font-size: 0.87rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        gap 0.2s ease;
+}
+
+.resource-action:hover {
+    gap: 11px;
+
+    color:
+        var(--primary-dark, #1d4ed8);
+}
+
+.resource-action i {
+    font-size: 0.75rem;
+}
+
+.resource-action.disabled {
+    color: #94a3b8;
+
+    cursor: not-allowed;
+
+    opacity: 0.75;
+}
+
+.resource-action.disabled:hover {
+    gap: 8px;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.books-empty {
+    padding: 75px 25px;
+
+    text-align: center;
+
+    border:
+        1px dashed var(--border-color, #cbd5e1);
+
+    border-radius: 18px;
+
+    background:
+        var(--card-bg, #ffffff);
+}
+
+.books-empty .empty-icon {
+    width: 66px;
+    height: 66px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--primary-light, #eff6ff);
+
+    color:
+        var(--primary-color, #2563eb);
+
+    font-size: 1.45rem;
+}
+
+.books-empty h3 {
+    margin: 0 0 8px;
+
+    color:
+        var(--heading-color, #111827);
+
+    font-size: 1.25rem;
+}
+
+.books-empty p {
+    margin: 0;
+
+    color:
+        var(--text-color, #64748b);
+
+    font-size: 0.92rem;
+}
+
+
+/* =========================================================
+   RESOURCE TIPS
+========================================================= */
+
+.resource-tips {
+    padding: 15px 0 85px;
+}
+
+.section-intro {
+    max-width: 720px;
+
+    margin-bottom: 40px;
+}
+
+.section-intro .section-tag {
+    display: inline-block;
+
+    margin-bottom: 9px;
+}
+
+.section-intro h2 {
+    margin: 0 0 12px;
+
+    color:
+        var(--heading-color, #111827);
+
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.section-intro p {
+    margin: 0;
+
+    color:
+        var(--text-color, #64748b);
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   TIPS GRID
+========================================================= */
+
+.tips-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   TIP CARD
+========================================================= */
+
+.tip-card {
+    position: relative;
+
+    padding: 27px 24px;
+
+    background:
+        var(--card-bg, #ffffff);
+
+    border:
+        1px solid var(--border-color, #e5e7eb);
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 7px 22px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================================
+   TIP ICON
+========================================================= */
+
+.tip-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 13px;
+
+    background:
+        var(--primary-light, #eff6ff);
+
+    color:
+        var(--primary-color, #2563eb);
+
+    font-size: 1.1rem;
+}
+
+.tip-card > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color:
+        var(--primary-color, #2563eb);
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+.tip-card h3 {
+    margin: 0 0 10px;
+
+    color:
+        var(--heading-color, #111827);
+
+    font-size: 1.05rem;
+}
+
+.tip-card p {
+    margin: 0;
+
+    color:
+        var(--text-color, #64748b);
+
+    font-size: 0.86rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   RESOURCE CTA
+========================================================= */
+
+.resource-cta {
+    padding: 0 0 85px;
+}
+
+.resource-cta-box {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 42px 45px;
+
+    border:
+        1px solid var(--border-color, #e5e7eb);
+
+    border-radius: 21px;
+
+    background:
+        var(--card-bg, #ffffff);
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.resource-cta-box > div {
+    max-width: 720px;
+}
+
+.resource-cta-box .section-tag {
+    display: inline-block;
+
+    margin-bottom: 9px;
+}
+
+.resource-cta-box h2 {
+    margin: 0 0 10px;
+
+    color:
+        var(--heading-color, #111827);
+
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.resource-cta-box p {
+    margin: 0;
+
+    color:
+        var(--text-color, #64748b);
+
+    line-height: 1.7;
+}
+
+.resource-cta-box .btn {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .books-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #0f172a
+        );
+
+    border-color: #263244;
+}
+
+body.dark-mode .books-search,
+body.dark-mode .book-filter,
+body.dark-mode .resource-card,
+body.dark-mode .books-empty,
+body.dark-mode .tip-card,
+body.dark-mode .resource-cta-box {
+    background: #111827;
+
+    border-color: #263244;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+body.dark-mode .books-search input {
+    color: #f8fafc;
+}
+
+body.dark-mode .books-search i {
+    color: #94a3b8;
+}
+
+body.dark-mode .book-filter {
+    color: #cbd5e1;
+}
+
+body.dark-mode .book-filter:hover {
+    color: #93c5fd;
+
+    border-color: #3b82f6;
+}
+
+body.dark-mode .resource-cover {
+    background:
+        linear-gradient(
+            135deg,
+            #1e293b,
+            #172554
+        );
+}
+
+body.dark-mode .resource-icon {
+    background:
+        rgba(15, 23, 42, 0.78);
+}
+
+body.dark-mode .resource-card-content h3,
+body.dark-mode .books-empty h3,
+body.dark-mode .tip-card h3,
+body.dark-mode .resource-cta-box h2,
+body.dark-mode .books-hero h1,
+body.dark-mode .section-intro h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .resource-bottom {
+    border-color: #263244;
+}
+
+body.dark-mode .books-empty {
+    border-color: #334155;
+}
+
+body.dark-mode .tip-icon,
+body.dark-mode .books-empty .empty-icon {
+    background: #172554;
+}
+
+
+/* =========================================================
+   RESPONSIVE — LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .books-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .tips-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .books-toolbar {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .books-search {
+        max-width: none;
+    }
+
+    .book-filters {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .books-hero {
+        padding: 65px 0 50px;
+    }
+
+    .books-section {
+        padding: 50px 0;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .books-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .resource-cover {
+        height: 200px;
+    }
+
+    .resource-tips {
+        padding-bottom: 65px;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-cta {
+        padding-bottom: 65px;
+    }
+
+    .resource-cta-box {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 32px 25px;
+    }
+
+    .resource-cta-box .btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .books-hero h1 {
+        font-size: 2rem;
+    }
+
+    .books-hero p {
+        font-size: 0.95rem;
+    }
+
+    .book-filters {
+        gap: 6px;
+    }
+
+    .book-filter {
+        padding: 8px 12px;
+
+        font-size: 0.8rem;
+    }
+
+    .resource-card-content {
+        padding: 19px;
+    }
+
+    .resource-card-content p {
+        min-height: auto;
+    }
+
+    .resource-cta-box {
+        padding: 28px 20px;
+    }
+
+    .resource-cta-box h2 {
+        font-size: 1.5rem;
+    }
+
+}

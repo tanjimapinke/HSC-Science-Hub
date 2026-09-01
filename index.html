@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="HSC Science Hub — A structured learning platform for HSC Science students in Bangladesh.">
+
+    <title>HSC Science Hub | Learn Smarter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+
+                <span class="logo-text">
+                    HSC <strong>Science Hub</strong>
+                </span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="subjects.html">Subjects</a>
+                <a href="videos.html">Videos</a>
+                <a href="books.html">Resources</a>
+                <a href="practice.html">Practice</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <a href="playlist.html" class="icon-btn playlist-btn" aria-label="My playlist">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Built for HSC Science Students
+                    </div>
+
+                    <h1>
+                        Learn Smarter.<br>
+                        <span>Practice Better.</span><br>
+                        Prepare with Confidence.
+                    </h1>
+
+                    <p class="hero-description">
+                        A structured learning platform for Bangladeshi HSC
+                        Science students — bringing lectures, study materials,
+                        questions and tests together in one place.
+                    </p>
+
+                    <!-- Search -->
+                    <div class="hero-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="heroSearch"
+                            placeholder="Search chapters, topics, videos..."
+                            autocomplete="off">
+
+                        <button id="searchBtn">
+                            Search
+                        </button>
+
+                    </div>
+
+                    <div class="hero-actions">
+
+                        <a href="subjects.html" class="btn btn-primary">
+                            Explore Subjects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="practice.html" class="btn btn-secondary">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Start Practicing
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <strong>5+</strong>
+                            <span>Subjects</span>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <strong>100+</strong>
+                            <span>Chapters</span>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <strong>1000+</strong>
+                            <span>Practice Questions</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+<!-- Hero Visual -->
+<div class="hero-visual">
+
+    <div class="study-card main-study-card">
+
+        <div class="study-card-top">
+            <span class="small-label">Your Learning Space</span>
+
+            <span class="live-indicator">
+                <span></span>
+                Active
+            </span>
+        </div>
+
+        <div class="study-icon">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <h3>Keep Learning</h3>
+
+        <p>
+            Everything you need for your HSC Science preparation.
+        </p>
+
+        <div class="mini-progress">
+
+            <div class="progress-info">
+                <span>Overall Progress</span>
+                <strong>68%</strong>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" style="width:68%"></div>
+            </div>
+
+        </div>
+
+        <div class="study-card-footer">
+            <span>
+                <i class="fa-solid fa-book"></i>
+                Continue studying
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+    </div>
+
+</div>
+
+
+        <!-- ================= SUBJECTS ================= -->
+        <section class="section subjects-preview">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">EXPLORE</span>
+
+                        <h2>
+                            Your Subjects,
+                            <span>Organized.</span>
+                        </h2>
+                    </div>
+
+                    <a href="subjects.html" class="text-link">
+                        View All Subjects
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="subject-grid">
+
+                    <a href="subject.html?subject=physics" class="subject-card physics-card">
+
+                        <div class="subject-icon">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+
+                        <div class="subject-info">
+                            <span>01</span>
+                            <h3>Physics</h3>
+                            <p>1st & 2nd Paper</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+
+                    </a>
+
+
+                    <a href="subject.html?subject=chemistry" class="subject-card chemistry-card">
+
+                        <div class="subject-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+
+                        <div class="subject-info">
+                            <span>02</span>
+                            <h3>Chemistry</h3>
+                            <p>1st & 2nd Paper</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+
+                    </a>
+
+
+                    <a href="subject.html?subject=mathematics" class="subject-card math-card">
+
+                        <div class="subject-icon">
+                            <i class="fa-solid fa-square-root-variable"></i>
+                        </div>
+
+                        <div class="subject-info">
+                            <span>03</span>
+                            <h3>Higher Mathematics</h3>
+                            <p>1st & 2nd Paper</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+
+                    </a>
+
+
+                    <a href="subject.html?subject=biology" class="subject-card biology-card">
+
+                        <div class="subject-icon">
+                            <i class="fa-solid fa-dna"></i>
+                        </div>
+
+                        <div class="subject-info">
+                            <span>04</span>
+                            <h3>Biology</h3>
+                            <p>1st & 2nd Paper</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+
+                    </a>
+
+
+                    <a href="subject.html?subject=ict" class="subject-card ict-card">
+
+                        <div class="subject-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="subject-info">
+                            <span>05</span>
+                            <h3>ICT</h3>
+                            <p>Complete Course</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square card-arrow"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ROADMAP ================= -->
+        <section class="section roadmap-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">HOW IT WORKS</span>
+
+                    <h2>
+                        A Better Way to
+                        <span>Study.</span>
+                    </h2>
+
+                    <p>
+                        Follow a simple learning path instead of jumping
+                        between scattered resources.
+                    </p>
+
+                </div>
+
+
+                <div class="roadmap">
+
+                    <div class="roadmap-line"></div>
+
+                    <div class="roadmap-step">
+                        <div class="roadmap-number">01</div>
+                        <div class="roadmap-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3>Read</h3>
+                        <p>Understand the chapter from your textbook and notes.</p>
+                    </div>
+
+                    <div class="roadmap-step">
+                        <div class="roadmap-number">02</div>
+                        <div class="roadmap-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <h3>Watch</h3>
+                        <p>Learn concepts through structured Bangla lectures.</p>
+                    </div>
+
+                    <div class="roadmap-step">
+                        <div class="roadmap-number">03</div>
+                        <div class="roadmap-icon">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <h3>Practice</h3>
+                        <p>Strengthen your understanding with CQ and MCQ practice.</p>
+                    </div>
+
+                    <div class="roadmap-step">
+                        <div class="roadmap-number">04</div>
+                        <div class="roadmap-icon">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <h3>Test</h3>
+                        <p>Take timed tests and identify your weak areas.</p>
+                    </div>
+
+                    <div class="roadmap-step">
+                        <div class="roadmap-number">05</div>
+                        <div class="roadmap-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Improve</h3>
+                        <p>Track your progress and keep improving every day.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRACTICE ================= -->
+        <section class="section practice-section">
+
+            <div class="container practice-grid">
+
+                <div class="practice-content">
+
+                    <span class="section-label">PRACTICE ZONE</span>
+
+                    <h2>
+                        Practice Until
+                        <span>You're Confident.</span>
+                    </h2>
+
+                    <p>
+                        Prepare with chapter-wise creative questions,
+                        MCQs and timed tests designed for HSC Science students.
+                    </p>
+
+                    <div class="practice-features">
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>HSC-style Creative Questions</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Large MCQ Question Bank</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Timed Mock Tests</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Detailed Answer Review</span>
+                        </div>
+
+                    </div>
+
+                    <a href="practice.html" class="btn btn-primary">
+                        Explore Practice
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="practice-visual">
+
+                    <div class="score-card">
+
+                        <div class="score-header">
+                            <span>Recent Test</span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+
+                        <div class="score-main">
+
+                            <div class="score-circle">
+                                <div>
+                                    <strong>85%</strong>
+                                    <span>Accuracy</span>
+                                </div>
+                            </div>
+
+                            <div class="score-details">
+                                <h3>Physics — Chapter 01</h3>
+                                <p>20 Questions • 18 min</p>
+
+                                <div class="score-row">
+                                    <span>Correct</span>
+                                    <strong>17</strong>
+                                </div>
+
+                                <div class="score-row">
+                                    <span>Wrong</span>
+                                    <strong>3</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY US ================= -->
+        <section class="section why-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">WHY HSC SCIENCE HUB</span>
+
+                    <h2>
+                        Everything You Need,
+                        <span>One Place.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3>Organized Learning</h3>
+                        <p>
+                            Subjects, papers, chapters and resources are
+                            arranged in a clear learning structure.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <h3>Bangla Lectures</h3>
+                        <p>
+                            Find relevant Bangla lectures organized
+                            chapter-by-chapter and lesson-by-lesson.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Smart Practice</h3>
+                        <p>
+                            Practice creative questions and MCQs with
+                            answers and explanations.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <h3>Track Progress</h3>
+                        <p>
+                            Monitor your learning progress and test
+                            performance from your dashboard.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div>
+                        <span class="section-label">START TODAY</span>
+
+                        <h2>
+                            Your HSC Preparation
+                            <br>
+                            Starts <span>Here.</span>
+                        </h2>
+
+                        <p>
+                            Study smarter, practice consistently and
+                            prepare with confidence.
+                        </p>
+                    </div>
+
+                    <a href="subjects.html" class="btn btn-light">
+                        Explore Subjects
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+
+                    <span class="logo-mark">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        HSC <strong>Science Hub</strong>
+                    </span>
+
+                </a>
+
+                <p>
+                    A structured learning platform created to make
+                    HSC Science preparation simpler and more organized.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="subjects.html">Subjects</a>
+                <a href="videos.html">Video Lessons</a>
+                <a href="books.html">Resources</a>
+                <a href="practice.html">Practice</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Student</h4>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="playlist.html">My Playlist</a>
+                <a href="test.html">Take a Test</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>About</h4>
+
+                <a href="about.html">About HSC Science Hub</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 HSC Science Hub. Built for HSC Science students.
+            </span>
+
+            <span>
+                Learn • Practice • Improve
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

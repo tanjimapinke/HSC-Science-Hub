@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="HSC Science Hub — Track your HSC Science learning progress, practice and test performance.">
+
+    <title>Dashboard | HSC Science Hub</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- DASHBOARD CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <span class="logo-text">
+                HSC <strong>Science Hub</strong>
+            </span>
+
+        </a>
+
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="subjects.html">
+                Subjects
+            </a>
+
+            <a href="videos.html">
+                Videos
+            </a>
+
+            <a href="books.html">
+                Resources
+            </a>
+
+            <a href="practice.html">
+                Practice
+            </a>
+
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+        </div>
+
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                aria-label="Toggle theme">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <a
+                href="playlist.html"
+                class="icon-btn playlist-btn"
+                aria-label="My playlist">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </a>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     DASHBOARD HERO
+========================================================= -->
+
+<section class="dashboard-hero">
+
+    <div class="container">
+
+        <div class="dashboard-hero-content">
+
+            <span class="section-label">
+                STUDENT DASHBOARD
+            </span>
+
+            <h1>
+                Your Learning <span>Dashboard.</span>
+            </h1>
+
+            <p>
+                Track your study progress, explore subjects,
+                practice questions and monitor your preparation
+                from one place.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DASHBOARD CONTENT
+========================================================= -->
+
+<section class="section dashboard-section">
+
+    <div class="container">
+
+
+        <!-- OVERVIEW CARDS -->
+
+        <div class="dashboard-overview">
+
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Chapters
+                    </span>
+
+                    <strong id="chapterProgress">
+                        0
+                    </strong>
+
+                    <small>
+                        Completed
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Practice
+                    </span>
+
+                    <strong id="practiceProgress">
+                        0
+                    </strong>
+
+                    <small>
+                        Questions solved
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    <i class="fa-solid fa-stopwatch"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Tests
+                    </span>
+
+                    <strong id="testProgress">
+                        0
+                    </strong>
+
+                    <small>
+                        Tests completed
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        Progress
+                    </span>
+
+                    <strong id="overallProgress">
+                        0%
+                    </strong>
+
+                    <small>
+                        Overall progress
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="dashboard-main-grid">
+
+
+            <div class="dashboard-card progress-card">
+
+                <div class="dashboard-card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            YOUR PROGRESS
+                        </span>
+
+                        <h2>
+                            Keep Moving Forward
+                        </h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                </div>
+
+
+                <div class="overall-progress">
+
+                    <div class="progress-circle">
+
+                        <span id="progressCircle">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-details">
+
+                        <h3>
+                            Overall Preparation
+                        </h3>
+
+                        <p>
+                            Complete chapters, solve practice
+                            questions and take tests to improve
+                            your progress.
+                        </p>
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress-fill"
+                                id="overallProgressBar"
+                                style="width:0%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="dashboard-card quick-card">
+
+                <div class="dashboard-card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            QUICK ACTIONS
+                        </span>
+
+                        <h2>
+                            Continue Learning
+                        </h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <a href="subjects.html">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>
+                            Explore Subjects
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="practice.html">
+
+                        <i class="fa-solid fa-pen-to-square"></i>
+
+                        <span>
+                            Start Practice
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="test.html">
+
+                        <i class="fa-solid fa-stopwatch"></i>
+
+                        <span>
+                            Take a Test
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="videos.html">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                        <span>
+                            Watch Videos
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SUBJECT PROGRESS -->
+
+        <div class="dashboard-card subjects-progress-card">
+
+            <div class="dashboard-card-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        SUBJECTS
+                    </span>
+
+                    <h2>
+                        Subject Progress
+                    </h2>
+
+                </div>
+
+                <a
+                    href="subjects.html"
+                    class="text-link">
+
+                    View Subjects
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="subject-progress-list">
+
+
+                <div class="subject-progress-item">
+
+                    <div class="subject-progress-info">
+
+                        <span>
+                            <i class="fa-solid fa-atom"></i>
+                            Physics
+                        </span>
+
+                        <strong>
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:0%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="subject-progress-item">
+
+                    <div class="subject-progress-info">
+
+                        <span>
+                            <i class="fa-solid fa-flask"></i>
+                            Chemistry
+                        </span>
+
+                        <strong>
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:0%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="subject-progress-item">
+
+                    <div class="subject-progress-info">
+
+                        <span>
+                            <i class="fa-solid fa-square-root-variable"></i>
+                            Higher Mathematics
+                        </span>
+
+                        <strong>
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:0%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="subject-progress-item">
+
+                    <div class="subject-progress-info">
+
+                        <span>
+                            <i class="fa-solid fa-dna"></i>
+                            Biology
+                        </span>
+
+                        <strong>
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:0%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="subject-progress-item">
+
+                    <div class="subject-progress-info">
+
+                        <span>
+                            <i class="fa-solid fa-laptop-code"></i>
+                            ICT
+                        </span>
+
+                        <strong>
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:0%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- STUDY TIPS -->
+
+        <div class="dashboard-tip">
+
+            <div class="tip-icon">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    STUDY TIP
+                </span>
+
+                <h3>
+                    Consistency beats cramming.
+                </h3>
+
+                <p>
+                    Study a little every day, practice regularly
+                    and review your weak topics before exams.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-card">
+
+            <div>
+
+                <span class="section-label">
+                    KEEP GOING
+                </span>
+
+                <h2>
+                    Build Your HSC Preparation.
+                </h2>
+
+                <p>
+                    Choose a subject and continue learning
+                    chapter by chapter.
+                </p>
+
+            </div>
+
+
+            <a
+                href="subjects.html"
+                class="btn btn-light">
+
+                Explore Subjects
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo footer-logo">
+
+                <span class="logo-mark">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </span>
+
+                <span class="logo-text">
+
+                    HSC <strong>Science Hub</strong>
+
+                </span>
+
+            </a>
+
+            <p>
+                A structured learning platform created to make
+                HSC Science preparation simpler and more organized.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="subjects.html">
+                Subjects
+            </a>
+
+            <a href="videos.html">
+                Video Lessons
+            </a>
+
+            <a href="books.html">
+                Resources
+            </a>
+
+            <a href="practice.html">
+                Practice
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Student
+            </h4>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="playlist.html">
+                My Playlist
+            </a>
+
+            <a href="test.html">
+                Take a Test
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                About
+            </h4>
+
+            <a href="about.html">
+                About HSC Science Hub
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 HSC Science Hub. Built for HSC Science students.
+        </span>
+
+        <span>
+            Learn • Practice • Improve
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

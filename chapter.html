@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="HSC Science Hub — Study chapters with notes, formulas, videos and practice questions.">
+
+    <title>Chapter | HSC Science Hub</title>
+
+
+    <!-- ================= GOOGLE FONTS ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ================= FONT AWESOME ================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- ================= GLOBAL CSS ================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- ================= CHAPTER PAGE CSS ================= -->
+
+    <link rel="stylesheet" href="css/chapter.css">
+
+</head>
+
+
+<body class="chapter-page">
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <span class="logo-text">
+                HSC <strong>Science Hub</strong>
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="subjects.html" class="active">
+                Subjects
+            </a>
+
+            <a href="videos.html">
+                Videos
+            </a>
+
+            <a href="books.html">
+                Resources
+            </a>
+
+            <a href="practice.html">
+                Practice
+            </a>
+
+            <a href="test.html">
+                Tests
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </nav>
+
+
+        <!-- ACTIONS -->
+
+        <div class="nav-actions">
+
+            <a href="playlist.html"
+               class="nav-about">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </a>
+
+
+            <a href="about.html"
+               class="nav-about">
+
+                About
+
+            </a>
+
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Toggle theme">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     CHAPTER HERO
+========================================================= -->
+
+<section class="chapter-hero">
+
+    <div class="container">
+
+
+        <!-- BREADCRUMB -->
+
+        <div class="breadcrumb">
+
+            <a href="subjects.html">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                Subjects
+
+            </a>
+
+            <span>
+                /
+            </span>
+
+            <a
+                href="#"
+                id="subjectLink">
+
+                Physics
+
+            </a>
+
+            <span>
+                /
+            </span>
+
+            <span id="breadcrumbChapter">
+
+                Chapter 01
+
+            </span>
+
+        </div>
+
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="chapter-header">
+
+
+            <!-- ICON -->
+
+            <div
+                class="chapter-header-icon"
+                id="chapterIcon">
+
+                <i class="fa-solid fa-atom"></i>
+
+            </div>
+
+
+            <!-- TEXT -->
+
+            <div class="chapter-header-content">
+
+
+                <div class="chapter-tags">
+
+                    <span
+                        class="section-tag"
+                        id="subjectName">
+
+                        PHYSICS
+
+                    </span>
+
+
+                    <span
+                        class="chapter-label"
+                        id="chapterNumber">
+
+                        CHAPTER 01
+
+                    </span>
+
+                </div>
+
+
+                <h1 id="chapterTitle">
+
+                    Physical World and Measurement
+
+                </h1>
+
+
+                <p id="chapterDescription">
+
+                    Learn the fundamental concepts, measurements,
+                    units and important principles of this chapter.
+
+                </p>
+
+
+                <!-- HERO META -->
+
+                <div class="chapter-meta">
+
+
+                    <span>
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        4 Lessons
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-video"></i>
+
+                        3 Videos
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        25 Questions
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-signal"></i>
+
+                        Beginner
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="chapter-progress-card">
+
+
+            <div class="progress-info">
+
+                <div>
+
+                    <span>
+                        Your Chapter Progress
+                    </span>
+
+                    <strong>
+                        Keep learning and complete this chapter
+                    </strong>
+
+                </div>
+
+
+                <strong id="progressText">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CHAPTER TABS
+========================================================= -->
+
+<section class="chapter-navigation">
+
+    <div class="container">
+
+        <div class="chapter-tabs">
+
+
+            <button
+                class="chapter-tab active"
+                data-section="overview">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>
+                    Overview
+                </span>
+
+            </button>
+
+
+            <button
+                class="chapter-tab"
+                data-section="notes">
+
+                <i class="fa-solid fa-book"></i>
+
+                <span>
+                    Notes
+                </span>
+
+            </button>
+
+
+            <button
+                class="chapter-tab"
+                data-section="formulas">
+
+                <i class="fa-solid fa-square-root-variable"></i>
+
+                <span>
+                    Formulas
+                </span>
+
+            </button>
+
+
+            <button
+                class="chapter-tab"
+                data-section="videos">
+
+                <i class="fa-brands fa-youtube"></i>
+
+                <span>
+                    Videos
+                </span>
+
+            </button>
+
+
+            <button
+                class="chapter-tab"
+                data-section="practice">
+
+                <i class="fa-solid fa-pen-to-square"></i>
+
+                <span>
+                    Practice
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTENT
+========================================================= -->
+
+<section class="chapter-content">
+
+    <div class="container">
+
+
+        <!-- =====================================================
+             OVERVIEW
+        ====================================================== -->
+
+        <div
+            class="chapter-section active"
+            id="overview">
+
+
+            <div class="content-grid">
+
+
+                <!-- MAIN -->
+
+                <div class="main-content">
+
+
+                    <span class="section-tag">
+                        CHAPTER OVERVIEW
+                    </span>
+
+
+                    <h2 id="overviewTitle">
+
+                        What You Will Learn
+
+                    </h2>
+
+
+                    <p id="overviewText">
+
+                        This chapter introduces the main concepts
+                        that students need to understand before
+                        moving to more advanced topics.
+
+                    </p>
+
+
+
+                    <!-- TOPICS -->
+
+                    <div class="topic-box">
+
+
+                        <div class="topic-heading">
+
+                            <div class="topic-icon">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    KEY AREAS
+                                </span>
+
+                                <h3>
+                                    Important Topics
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <ul id="topicList">
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Fundamental concepts
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Important definitions
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Key principles
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                HSC examination concepts
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- STUDY TIP -->
+
+                    <div class="study-tip">
+
+                        <div class="study-tip-icon">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                STUDY TIP
+                            </span>
+
+                            <h3>
+                                Understand before memorizing
+                            </h3>
+
+                            <p>
+                                Focus on understanding the concept first.
+                                Then use formulas and practice questions
+                                to strengthen your preparation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SIDEBAR -->
+
+                <aside class="chapter-sidebar">
+
+
+                    <div class="sidebar-card">
+
+
+                        <div class="sidebar-title">
+
+                            <div>
+
+                                <span>
+                                    STUDY
+                                </span>
+
+                                <h3>
+                                    Quick Resources
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                        </div>
+
+
+                        <a href="#notes">
+
+                            <span class="resource-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </span>
+
+                            <span class="resource-text">
+
+                                <strong>
+                                    Read Notes
+                                </strong>
+
+                                <small>
+                                    Easy chapter explanation
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#formulas">
+
+                            <span class="resource-icon">
+                                <i class="fa-solid fa-square-root-variable"></i>
+                            </span>
+
+                            <span class="resource-text">
+
+                                <strong>
+                                    Formula Sheet
+                                </strong>
+
+                                <small>
+                                    Important formulas
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#videos">
+
+                            <span class="resource-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+
+                            <span class="resource-text">
+
+                                <strong>
+                                    Watch Videos
+                                </strong>
+
+                                <small>
+                                    Visual learning
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#practice">
+
+                            <span class="resource-icon">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </span>
+
+                            <span class="resource-text">
+
+                                <strong>
+                                    Practice Questions
+                                </strong>
+
+                                <small>
+                                    Test your knowledge
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- CHAPTER INFO -->
+
+                    <div class="sidebar-info-card">
+
+                        <div class="info-icon">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                        </div>
+
+                        <h3>
+                            HSC Preparation
+                        </h3>
+
+                        <p>
+                            Study consistently and practice regularly
+                            to build strong exam preparation.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             NOTES
+        ====================================================== -->
+
+        <div
+            class="chapter-section"
+            id="notes">
+
+
+            <div class="section-intro">
+
+                <span class="section-tag">
+                    STUDY NOTES
+                </span>
+
+                <h2>
+                    Chapter Notes
+                </h2>
+
+                <p>
+                    Study important concepts using simple,
+                    exam-focused explanations.
+                </p>
+
+            </div>
+
+
+            <div class="notes-grid">
+
+
+                <div class="note-card">
+
+                    <div class="note-card-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Key Concepts
+                    </h3>
+
+                    <p>
+                        Important concepts and definitions explained
+                        in simple language.
+                    </p>
+
+                    <a href="#">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="note-card">
+
+                    <div class="note-card-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Concept Explanation
+                    </h3>
+
+                    <p>
+                        Understand difficult topics through easy
+                        explanations and examples.
+                    </p>
+
+                    <a href="#">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="note-card">
+
+                    <div class="note-card-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Exam Focus
+                    </h3>
+
+                    <p>
+                        Important topics that are useful for HSC
+                        examination preparation.
+                    </p>
+
+                    <a href="#">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="coming-soon-box">
+
+                <div class="coming-icon">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        COMING SOON
+                    </span>
+
+                    <h3>
+                        Detailed Chapter Notes
+                    </h3>
+
+                    <p>
+                        Complete chapter-wise notes and explanations
+                        will be added here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             FORMULAS
+        ====================================================== -->
+
+        <div
+            class="chapter-section"
+            id="formulas">
+
+
+            <div class="section-intro">
+
+                <span class="section-tag">
+                    FORMULA SHEET
+                </span>
+
+                <h2>
+                    Important Formulas
+                </h2>
+
+                <p>
+                    Keep these formulas handy while solving
+                    numerical problems.
+                </p>
+
+            </div>
+
+
+            <div
+                class="formula-list"
+                id="formulaList">
+
+
+                <div class="formula-card">
+
+                    <div class="formula-number">
+                        01
+                    </div>
+
+                    <div class="formula-content">
+
+                        <span>
+                            BASIC FORMULA
+                        </span>
+
+                        <strong>
+                            v = d / t
+                        </strong>
+
+                        <p>
+                            Speed equals distance divided by time.
+                        </p>
+
+                    </div>
+
+                    <button class="formula-copy"
+                            type="button"
+                            onclick="copyFormula('v = d / t')">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="formula-card">
+
+                    <div class="formula-number">
+                        02
+                    </div>
+
+                    <div class="formula-content">
+
+                        <span>
+                            DENSITY
+                        </span>
+
+                        <strong>
+                            ρ = m / V
+                        </strong>
+
+                        <p>
+                            Density equals mass divided by volume.
+                        </p>
+
+                    </div>
+
+                    <button class="formula-copy"
+                            type="button"
+                            onclick="copyFormula('ρ = m / V')">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="formula-card">
+
+                    <div class="formula-number">
+                        03
+                    </div>
+
+                    <div class="formula-content">
+
+                        <span>
+                            ERROR
+                        </span>
+
+                        <strong>
+                            Error % = (Δx / x) × 100
+                        </strong>
+
+                        <p>
+                            Used to express measurement error as a percentage.
+                        </p>
+
+                    </div>
+
+                    <button class="formula-copy"
+                            type="button"
+                            onclick="copyFormula('Error % = (Δx / x) × 100')">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="formula-card">
+
+                    <div class="formula-number">
+                        04
+                    </div>
+
+                    <div class="formula-content">
+
+                        <span>
+                            DIMENSION
+                        </span>
+
+                        <strong>
+                            [Q] = MᵃLᵇTᶜ
+                        </strong>
+
+                        <p>
+                            General dimensional representation of a quantity.
+                        </p>
+
+                    </div>
+
+                    <button class="formula-copy"
+                            type="button"
+                            onclick="copyFormula('[Q] = MᵃLᵇTᶜ')">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             VIDEOS
+        ====================================================== -->
+
+        <div
+            class="chapter-section"
+            id="videos">
+
+
+            <div class="section-intro">
+
+                <span class="section-tag">
+                    VIDEO LESSONS
+                </span>
+
+                <h2>
+                    Learn Through Videos
+                </h2>
+
+                <p>
+                    Watch visual lessons to understand difficult
+                    concepts more easily.
+                </p>
+
+            </div>
+
+
+            <div class="video-grid">
+
+
+                <div class="video-card">
+
+
+                    <div class="video-thumbnail">
+
+                        <div class="video-play">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </div>
+
+                        <span>
+                            LESSON 01
+                        </span>
+
+                    </div>
+
+
+                    <div class="video-card-content">
+
+                        <span class="video-label">
+                            CONCEPT
+                        </span>
+
+                        <h3>
+                            Chapter Introduction
+                        </h3>
+
+                        <p>
+                            Understand the basic concepts and
+                            important ideas of this chapter.
+                        </p>
+
+
+                        <div class="video-details">
+
+                            <span>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                18 min
+
+                            </span>
+
+
+                            <span>
+
+                                <i class="fa-solid fa-language"></i>
+
+                                Bangla
+
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn btn-primary"
+                            onclick="showVideoMessage()">
+
+                            Watch Video
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="video-card">
+
+
+                    <div class="video-thumbnail">
+
+                        <div class="video-play">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </div>
+
+                        <span>
+                            LESSON 02
+                        </span>
+
+                    </div>
+
+
+                    <div class="video-card-content">
+
+                        <span class="video-label">
+                            PROBLEM SOLVING
+                        </span>
+
+                        <h3>
+                            Important Problems
+                        </h3>
+
+                        <p>
+                            Practice important numerical and
+                            examination-focused problems.
+                        </p>
+
+
+                        <div class="video-details">
+
+                            <span>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                22 min
+
+                            </span>
+
+
+                            <span>
+
+                                <i class="fa-solid fa-language"></i>
+
+                                Bangla
+
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn btn-primary"
+                            onclick="showVideoMessage()">
+
+                            Watch Video
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PRACTICE
+        ====================================================== -->
+
+        <div
+            class="chapter-section"
+            id="practice">
+
+
+            <div class="section-intro">
+
+                <span class="section-tag">
+                    PRACTICE ZONE
+                </span>
+
+                <h2>
+                    Test Your Knowledge
+                </h2>
+
+                <p>
+                    Practice questions from this chapter and
+                    check your understanding.
+                </p>
+
+            </div>
+
+
+            <div class="practice-card">
+
+
+                <div class="practice-icon">
+
+                    <i class="fa-solid fa-pen-to-square"></i>
+
+                </div>
+
+
+                <div class="practice-content">
+
+                    <span>
+                        CHAPTER PRACTICE
+                    </span>
+
+                    <h3>
+                        Ready to challenge yourself?
+                    </h3>
+
+                    <p>
+                        Solve MCQs and important questions from
+                        this chapter and identify your weak areas.
+                    </p>
+
+
+                    <div class="practice-stats">
+
+                        <span>
+
+                            <i class="fa-solid fa-list-check"></i>
+
+                            25 Questions
+
+                        </span>
+
+
+                        <span>
+
+                            <i class="fa-solid fa-clock"></i>
+
+                            20 Minutes
+
+                        </span>
+
+
+                        <span>
+
+                            <i class="fa-solid fa-chart-simple"></i>
+
+                            Mixed Difficulty
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="practice.html"
+                    class="btn btn-primary">
+
+                    Start Practice
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PREVIOUS / NEXT CHAPTER
+========================================================= -->
+
+<section class="chapter-navigation-bottom">
+
+    <div class="container">
+
+
+        <a
+            href="#"
+            class="previous-chapter"
+            id="previousChapter">
+
+            <span>
+                <i class="fa-solid fa-arrow-left"></i>
+                Previous Chapter
+            </span>
+
+            <strong>
+                Previous
+            </strong>
+
+        </a>
+
+
+        <div class="chapter-nav-center">
+
+            <span>
+                CHAPTER NAVIGATION
+            </span>
+
+            <i class="fa-solid fa-ellipsis"></i>
+
+        </div>
+
+
+        <a
+            href="#"
+            class="next-chapter"
+            id="nextChapter">
+
+            <span>
+                Next Chapter
+                <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+            <strong>
+                Next
+            </strong>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </span>
+
+                <span class="logo-text">
+
+                    HSC <strong>Science Hub</strong>
+
+                </span>
+
+            </a>
+
+
+            <p>
+                A structured learning platform designed to make
+                HSC Science preparation simpler, smarter and
+                more organized.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="subjects.html">
+                Subjects
+            </a>
+
+            <a href="videos.html">
+                Videos
+            </a>
+
+            <a href="books.html">
+                Resources
+            </a>
+
+            <a href="practice.html">
+                Practice
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h4>
+                Study
+            </h4>
+
+            <a href="test.html">
+                Tests
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="playlist.html">
+                Playlist
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h4>
+                HSC Science
+            </h4>
+
+            <a href="subject.html?subject=physics">
+                Physics
+            </a>
+
+            <a href="subject.html?subject=chemistry">
+                Chemistry
+            </a>
+
+            <a href="subject.html?subject=biology">
+                Biology
+            </a>
+
+            <a href="subject.html?subject=ict">
+                ICT
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © 2026 HSC Science Hub. Built for HSC Science Students.
+            </span>
+
+            <span>
+                Learn • Practice • Improve
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/app.js"></script>
+<script src="js/chapter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,894 @@
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/videos.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Videos | HSC Science Hub</title>
+
+    <meta name="description"
+          content="Watch HSC Science video lessons for Physics, Chemistry, Higher Mathematics, Biology and ICT.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚛</span>
+                <span>HSC Science Hub</span>
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="subjects.html">
+                    Subjects
+                </a>
+
+                <a href="videos.html" class="active">
+                    Videos
+                </a>
+
+                <a href="books.html">
+                    Books
+                </a>
+
+                <a href="practice.html">
+                    Practice
+                </a>
+
+                <a href="test.html">
+                    Tests
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="about.html" class="nav-about">
+                    About
+                </a>
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle theme">
+                    🌙
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="section-tag">
+                VIDEO LIBRARY
+            </span>
+
+            <h1>
+                Learn Through Videos
+            </h1>
+
+            <p>
+                Watch clear and focused video lessons to understand
+                difficult HSC Science concepts more easily.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VIDEO SECTION ================= -->
+    <main>
+
+        <section class="videos-section">
+
+            <div class="container">
+
+
+                <!-- ================= SEARCH ================= -->
+                <div class="video-toolbar">
+
+                    <div class="search-box">
+
+                        <span>🔍</span>
+
+                        <input
+                            type="text"
+                            id="videoSearch"
+                            placeholder="Search videos, topics or chapters..."
+                            autocomplete="off">
+
+                    </div>
+
+
+                    <!-- SUBJECT FILTER -->
+                    <div class="video-filters">
+
+                        <button
+                            class="filter-btn active"
+                            data-filter="all">
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="physics">
+                            Physics
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="chemistry">
+                            Chemistry
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="higher-math">
+                            Higher Math
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="biology">
+                            Biology
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="ict">
+                            ICT
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= FEATURED VIDEO ================= -->
+                <div class="featured-video">
+
+                    <div class="featured-video-content">
+
+                        <span class="section-tag">
+                            FEATURED LESSON
+                        </span>
+
+                        <h2>
+                            Start Your HSC Science Journey
+                        </h2>
+
+                        <p>
+                            Explore important concepts, chapter
+                            explanations and problem-solving techniques
+                            through our growing video library.
+                        </p>
+
+                        <button
+                            class="btn btn-primary"
+                            onclick="showVideoMessage()">
+                            ▶ Start Watching
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-play">
+
+                        <button
+                            class="large-play"
+                            onclick="showVideoMessage()"
+                            aria-label="Play featured video">
+                            ▶
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= VIDEO HEADING ================= -->
+                <div class="section-heading video-heading">
+
+                    <div>
+
+                        <span class="section-tag">
+                            VIDEO LESSONS
+                        </span>
+
+                        <h2>
+                            Latest Lessons
+                        </h2>
+
+                    </div>
+
+                    <p id="videoCount">
+                        Showing all videos
+                    </p>
+
+                </div>
+
+
+                <!-- ================= VIDEO GRID ================= -->
+                <div
+                    class="video-grid"
+                    id="videoGrid">
+                </div>
+
+
+                <!-- ================= EMPTY STATE ================= -->
+                <div
+                    class="empty-state"
+                    id="emptyState"
+                    style="display:none;">
+
+                    <div class="empty-icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        No videos found
+                    </h3>
+
+                    <p>
+                        Try another search term or select a
+                        different subject.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VIDEO CTA ================= -->
+        <section class="study-cta">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div class="cta-content">
+
+                        <span class="section-tag">
+                            NEED MORE PRACTICE?
+                        </span>
+
+                        <h2>
+                            Practice What You Learn
+                        </h2>
+
+                        <p>
+                            After watching a lesson, test your
+                            understanding with chapter-wise practice.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="practice.html"
+                        class="btn btn-primary">
+                        Practice Now →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-icon">
+                        ⚛
+                    </span>
+
+                    <span>
+                        HSC Science Hub
+                    </span>
+
+                </a>
+
+                <p>
+                    A simple learning platform for HSC Science
+                    students to study, practice and prepare better.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="subjects.html">
+                    Subjects
+                </a>
+
+                <a href="videos.html">
+                    Videos
+                </a>
+
+                <a href="books.html">
+                    Books
+                </a>
+
+                <a href="practice.html">
+                    Practice
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Study
+                </h4>
+
+                <a href="test.html">
+                    Tests
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="playlist.html">
+                    Playlists
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 HSC Science Hub. Built for HSC Science Students.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+   <script>
+
+/* =========================================================
+   HSC SCIENCE HUB — VIDEO LIBRARY
+========================================================= */
+
+const videos = [
+
+    {
+        title: "Physical World and Measurement",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 01",
+        youtube: "https://www.youtube.com/results?search_query=HSC+Physics+Physical+World+and+Measurement+Bangla",
+        channel: "YouTube",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Vector",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 02",
+        youtube: "https://www.youtube.com/watch?v=MYt6P5eomRw",
+        channel: "10 Minute School",
+        instructor: "Ratul Khan",
+        language: "Bangla"
+    },
+
+    {
+        title: "Dynamics",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 03",
+        youtube: "https://www.youtube.com/watch?v=_7XcZTHZBGQ",
+        channel: "10 Minute School",
+        instructor: "Ratul Khan",
+        language: "Bangla"
+    },
+
+    {
+        title: "Newtonian Mechanics",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 04",
+        youtube: "https://www.youtube.com/results?search_query=HSC+Physics+Newtonian+Mechanics+Bangla",
+        channel: "YouTube",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Work, Energy and Power",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 05",
+        youtube: "https://www.youtube.com/results?search_query=HSC+Physics+Work+Energy+Power+Bangla",
+        channel: "YouTube",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Gravitation and Gravity",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 06",
+        youtube: "https://www.youtube.com/watch?v=k-kwLAlrKwI",
+        channel: "10 Minute School",
+        instructor: "Ratul Khan",
+        language: "Bangla"
+    },
+
+    {
+        title: "Structural Properties of Matter",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 07",
+        youtube: "https://www.youtube.com/watch?v=pHPcDQYDIlg",
+        channel: "10 Minute School",
+        instructor: "Ratul Khan",
+        language: "Bangla"
+    },
+
+    {
+        title: "Periodic Motion",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 08",
+        youtube: "https://www.youtube.com/results?search_query=HSC+Physics+Periodic+Motion+Bangla",
+        channel: "YouTube",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Wave",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 09",
+        youtube: "https://www.youtube.com/results?search_query=HSC+Physics+Wave+Bangla+HSC",
+        channel: "YouTube",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Ideal Gas and Kinetic Theory",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 10",
+        youtube: "https://www.youtube.com/watch?v=epjIhO1qHAM",
+        channel: "10 Minute School",
+        instructor: "Forhad Sohel",
+        language: "Bangla"
+    },
+
+    {
+        title: "Thermodynamics",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 11",
+        youtube: "https://www.youtube.com/watch?v=8OHxgXWZ8mQ",
+        channel: "10 Minute School",
+        instructor: "Ratul Khan",
+        language: "Bangla"
+    },
+
+    {
+        title: "Electrostatics",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 12",
+        youtube: "https://www.youtube.com/watch?v=qZJ6MfwA4kA",
+        channel: "Ultimate Physics",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Current Electricity",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 13",
+        youtube: "https://www.youtube.com/results?search_query=HSC+Physics+Current+Electricity+Bangla",
+        channel: "YouTube",
+        instructor: "",
+        language: "Bangla"
+    },
+
+    {
+        title: "Magnetic Effect of Current",
+        subject: "physics",
+        subjectName: "Physics",
+        chapter: "Chapter 14",
+        youtube: "https://www.youtube.com/watch?v=a0zGFBHXoIU",
+        channel: "10 Minute School",
+        instructor: "Ratul Khan",
+        language: "Bangla"
+    }
+
+];
+
+
+const videoGrid =
+    document.getElementById("videoGrid");
+
+const videoSearch =
+    document.getElementById("videoSearch");
+
+const emptyState =
+    document.getElementById("emptyState");
+
+const videoCount =
+    document.getElementById("videoCount");
+
+
+let currentFilter = "all";
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+function getVideoIcon(subject) {
+
+    const icons = {
+
+        physics: "⚛",
+
+        chemistry: "🧪",
+
+        "higher-math": "∑",
+
+        biology: "🧬",
+
+        ict: "💻"
+
+    };
+
+    return icons[subject] || "▶";
+
+}
+
+
+/* =========================================================
+   RENDER VIDEOS
+========================================================= */
+
+function renderVideos() {
+
+    const searchTerm =
+        videoSearch.value
+            .toLowerCase()
+            .trim();
+
+
+    const filteredVideos =
+        videos.filter(video => {
+
+            const subjectMatch =
+                currentFilter === "all" ||
+                video.subject === currentFilter;
+
+
+            const searchableText = `
+
+                ${video.title}
+                ${video.subjectName}
+                ${video.chapter}
+                ${video.channel}
+                ${video.instructor}
+                ${video.language}
+
+            `.toLowerCase();
+
+
+            return (
+                subjectMatch &&
+                searchableText.includes(searchTerm)
+            );
+
+        });
+
+
+    videoGrid.innerHTML = "";
+
+
+    if (filteredVideos.length === 0) {
+
+        emptyState.style.display = "block";
+
+        videoCount.textContent =
+            "No videos found";
+
+        return;
+
+    }
+
+
+    emptyState.style.display = "none";
+
+
+    videoCount.textContent =
+        `Showing ${filteredVideos.length} video${filteredVideos.length > 1 ? "s" : ""}`;
+
+
+    filteredVideos.forEach(video => {
+
+        const card =
+            document.createElement("article");
+
+        card.className =
+            "video-card";
+
+
+        card.innerHTML = `
+
+            <div class="video-thumbnail">
+
+                <div class="video-thumbnail-icon">
+
+                    ${getVideoIcon(video.subject)}
+
+                </div>
+
+
+                <a
+                    href="${video.youtube}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="video-play"
+                    aria-label="Watch video">
+
+                    <i class="fa-solid fa-play"></i>
+
+                </a>
+
+
+                <span class="video-duration">
+
+                    ${video.language}
+
+                </span>
+
+            </div>
+
+
+            <div class="video-card-content">
+
+                <span class="video-subject">
+
+                    ${video.subjectName}
+
+                </span>
+
+
+                <h3>
+
+                    ${video.title}
+
+                </h3>
+
+
+                <p>
+
+                    ${video.chapter}
+
+                    ·
+
+                    ${video.channel}
+
+                    ${video.instructor
+                        ? " · " + video.instructor
+                        : ""}
+
+                </p>
+
+
+                <div class="video-card-bottom">
+
+                    <a
+                        href="${video.youtube}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="watch-link">
+
+                        Watch on YouTube
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="chapter.html?subject=${video.subject}&chapter=${parseInt(video.chapter.replace("Chapter ", ""))}"
+                        class="watch-link">
+
+                        View Chapter →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        videoGrid.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+document
+    .querySelectorAll(".filter-btn")
+    .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            document
+                .querySelectorAll(".filter-btn")
+                .forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+
+            button.classList.add("active");
+
+
+            currentFilter =
+                button.dataset.filter;
+
+
+            renderVideos();
+
+        });
+
+    });
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+videoSearch.addEventListener(
+    "input",
+    renderVideos
+);
+
+
+/* =========================================================
+   FEATURED VIDEO
+========================================================= */
+
+function showVideoMessage() {
+
+    if (videos.length > 0) {
+
+        window.open(
+            videos[0].youtube,
+            "_blank"
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+const savedTheme =
+    localStorage.getItem("hsc-theme");
+
+
+if (savedTheme === "dark") {
+
+    document.body.classList.add("dark-mode");
+
+    themeToggle.innerHTML =
+        '<i class="fa-solid fa-sun"></i>';
+
+}
+
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+
+    const isDark =
+        document.body.classList.contains("dark-mode");
+
+
+    localStorage.setItem(
+        "hsc-theme",
+        isDark ? "dark" : "light"
+    );
+
+
+    themeToggle.innerHTML =
+        isDark
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+
+});
+
+
+/* =========================================================
+   INITIAL LOAD
+========================================================= */
+
+renderVideos();
+
+</script>
+
+
+</body>
+</html>
