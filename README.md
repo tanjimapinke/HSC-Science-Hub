@@ -9,7 +9,6 @@ The platform brings subjects, chapters, learning resources, videos, practice que
 **HSC Science Hub:**
 https://tanjimapinke.github.io/HSC-Science-Hub/
 
-> Replace `YOUR-USERNAME` with your GitHub username after enabling GitHub Pages.
 
 ---
 
