@@ -113,7 +113,7 @@ No server or backend is required.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/HSC-Science-Hub.git
+git clone https://tanjimapinke.github.io/HSC-Science-Hub/
 ```
 
 ### 2. Open the project
@@ -164,7 +164,7 @@ Possible future features include:
 
 ## 📌 Current Status
 
-**Frontend Development — In Progress**
+**Frontend Development - In Progress**
 
 The current version focuses on building and refining the frontend interface and core client-side functionality.
 
